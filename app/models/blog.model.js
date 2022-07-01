@@ -3,6 +3,9 @@ module.exports = (sequelize, Sequelize) => {
       title: {
         type: Sequelize.STRING
       },
+      created: {
+        type: Sequelize.DATE
+      },
       content: {
         type: Sequelize.STRING
       },

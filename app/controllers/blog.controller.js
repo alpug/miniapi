@@ -15,6 +15,7 @@ exports.create = (req, res) => {
     //create a blog
     const blog = {
         title: req.body.title,
+        created: req.body.created,
         content: req.body.content,
         public: request.body.public
     }
