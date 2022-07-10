@@ -11,6 +11,10 @@ module.exports = (sequelize, Sequelize) => {
       },
       public: {
         type: Sequelize.BOOLEAN
+      },
+      //Think I'll remove this and create a comments object which is an object array of comment so each comment can link to blog post by post id
+      comments: {
+        type: Sequelize.ARRAY
       }
     });
     return Blog;
